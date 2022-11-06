@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= {{url_for("static",filename = "style.css")}}>
+    <link rel="stylesheet" href={{url_for("static",filename = "content.css")}}>
+    <link rel="stylesheet" href={{url_for("static",filename = "form.css")}}>
+    <link rel="stylesheet" href={{url_for("static",filename = "blog.css")}}>
+    <link rel="stylesheet" href={{url_for("static",filename = "login.css")}}>
+    <link rel="stylesheet" href={{url_for("static",filename = "table.css")}}>
+    <title>POST</title>
+</head>
+<body>
+    <section id="addblog">
+         <header>
+            <!-- <a href="#"><img src="images/logo1.png" alt=""></a> -->
+            <h4>BOOK FACTORY</h4>
+            <ul id="menu">
+                <li><b><a href="/">Home</a></b></li>
+                <li><b><a href="/addpost">Author HOME</a></b></li>
+            </ul>
+        </header>
+        <div class="bcontainer">
+            <div class="box">
+                <div class="title">ADD BLOG</div>
+                <form action="/binsertdata" method="post">
+                    <div class="auther-blog">
+                        <div class="input-box">
+                            <span class="details">Auther name</span>
+                            <input type="text" name="bname" id="" placeholder="Auther name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Title</span>
+                            <input type="text" name="btitle" id="" placeholder="Title" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Blog</span>
+                            <input type="text" name="bblog" id="" placeholder="Blog" required>
+                        </div>
+                    </div>
+                    <div class="abutton">
+                        <input type="submit" value="UPLOAD">
+                    </div><br>
+                    <div class="abutton">
+                        <input type="reset" value="RESET">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

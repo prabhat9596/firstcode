@@ -1,0 +1,96 @@
+table {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+    width: 800px;
+    height: 100px;
+    border: 1px solid #bdc3c7;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2),-1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+tr{
+    text-align: center;
+    transform: all .2s ease-in;
+    cursor: pointer;
+    background-color: rgb(252, 249, 212);
+}
+
+th,td{
+    text-align: center;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#header{
+    background-color: #150050;
+    color: #fff;
+}
+
+h2{
+    font-weight: 600;
+    text-align: center;
+    background-color: #150050;
+    color: #fff;
+    margin: 100px;
+    padding: 30px 60px;
+}
+
+tr:hover{
+    background-color: #f5f5f5;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2),-1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+table td .btn{
+    font-size: 12px;
+    background: #259702;
+    width: 70px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+table td .btn:hover,
+table td .btn:focus,
+table td .btn:active{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+table td .btn1{
+    font-size: 12px;
+    background: #f30808;
+    width: 70px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+table td .btn1:hover,
+table td .btn1:focus,
+table td .btn1:active{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

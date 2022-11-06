@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= {{url_for("static",filename = "style.css")}}>
+    <link rel="stylesheet" href={{url_for("static",filename = "content.css")}}>
+    <link rel="stylesheet" href={{url_for("static",filename = "form.css")}}>
+    <link rel="stylesheet" href={{url_for("static",filename = "blog.css")}}>
+    <link rel="stylesheet" href={{url_for("static",filename = "login.css")}}>
+    <link rel="stylesheet" href={{url_for("static",filename = "table.css")}}>
+    <title>Home</title>
+</head>
+
+<body>
+    <section id="home">
+        <header>
+            <!-- <a href="#"><img src="images/logo1.png" alt=""></a> -->
+            <h4>BOOK FACTORY</h4>
+            <ul id="menu">
+                <li><b><a href="#home">Home</a></b></li>
+                <li><b><a href="#services">Services</a></b></li>
+                <!-- <li><a href="#blog">Blog</a></li> -->
+                <!-- <li><a href="/bdetails">Blogs</a></li> -->
+            </ul>
+        </header>
+        <div class="body">
+            <div class="scontainer">
+                <div class="box">
+                    <h3>Author</h3>
+                    <h4>LOGIN AS AUTHOR</h4><br><br>
+                    <a href="/Author"><button class="btn">Click here</button></a>
+                </div>
+
+                <div class="box">
+                    <h3>USER</h3>
+                    <h4>LOGIN AS USER</h4><br><br>
+                    <a href="/user"><button class="btn">click here</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="body">
+            <div class="scontainer">
+                <div class="box">
+                    <h3>1</h3>
+                    <h4>Service One</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur culpa ea dolore error
+                        ipsum facilis aut, laudantium dicta ipsa. Qui ut dolor autem ad nesciunt repudiandae
+                        voluptatibus unde dolorem suscipit!
+                        A omnis, incidunt provident nulla nostrum voluptate officia quaerat numquam quis odio dolore
+                        enim soluta, eaque doloremque fuga nesciunt aut aspernatur? Autem eveniet quaerat hic facilis
+                        dolorem quod sunt nesciunt!</p>
+                    </div>
+                    
+                <div class="box">
+                    <h3>2</h3>
+                    <h4>Service Two</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur culpa ea dolore error
+                        ipsum facilis aut, laudantium dicta ipsa. Qui ut dolor autem ad nesciunt repudiandae
+                        voluptatibus unde dolorem suscipit!
+                        A omnis, incidunt provident nulla nostrum voluptate officia quaerat numquam quis odio dolore
+                        enim soluta, eaque doloremque fuga nesciunt aut aspernatur? Autem eveniet quaerat hic facilis
+                        dolorem quod sunt nesciunt!</p>
+                </div>
+
+                <div class="box">
+                    <h3>3</h3>
+                    <h4>Service Three</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur culpa ea dolore error
+                        ipsum facilis aut, laudantium dicta ipsa. Qui ut dolor autem ad nesciunt repudiandae
+                        voluptatibus unde dolorem suscipit!
+                        A omnis, incidunt provident nulla nostrum voluptate officia quaerat numquam quis odio dolore
+                        enim soluta, eaque doloremque fuga nesciunt aut aspernatur? Autem eveniet quaerat hic facilis
+                        dolorem quod sunt nesciunt!</p>
+                </div>
+
+                <div class="box">
+                    <h3>4</h3>
+                    <h4>Service Four</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur culpa ea dolore error
+                        ipsum facilis aut, laudantium dicta ipsa. Qui ut dolor autem ad nesciunt repudiandae
+                        voluptatibus unde dolorem suscipit!
+                        A omnis, incidunt provident nulla nostrum voluptate officia quaerat numquam quis odio dolore
+                        enim soluta, eaque doloremque fuga nesciunt aut aspernatur? Autem eveniet quaerat hic facilis
+                        dolorem quod sunt nesciunt!</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="blog">
+        <header>
+            <a href="#"><img src="images/logo1.png" alt=""></a>
+            <h4>BOOK FACTORY</h4>
+            <ul id="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/uhome">User Home</a></li>
+            </ul>
+        </header>
+
+            <h2>BLOGS</h2>
+            <table>                
+                {% for i in blist %}
+                <tr>
+                    <td><b>Name:</b>  {{ i[0] }} 
+                
+                    <br><br><b>Title:</b>  {{ i[1] }}
+                
+                    <br><br><b>Blog:</b>  {{ i[2] }}</td>
+                </tr>
+                
+                {% endfor %}
+            </table>
+            
+        </section> -->
+        
+</body>
+
+
+</html>

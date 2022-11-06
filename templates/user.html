@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= {{url_for("static",filename = "style.css")}}>
+    <link rel="stylesheet" href={{url_for("static",filename = "content.css")}}>
+    <link rel="stylesheet" href={{url_for("static",filename = "form.css")}}>
+    <link rel="stylesheet" href={{url_for("static",filename = "blog.css")}}>
+    <link rel="stylesheet" href={{url_for("static",filename = "login.css")}}>
+    <title>Home</title>
+</head>
+
+<body>
+    <section id="login">
+        <header>
+            <!-- <a href="#"><img src="images/logo1.png" alt=""></a> -->
+            <h4>BOOK FACTORY</h4>
+            <ul id="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#register">User Register</a></li>
+                <!-- <li><a href="/udetails">View user Records</a></li> -->
+            </ul>
+        </header>
+        <div class="acontainer">
+            <div class="box">
+                <div class="title">User Login</div>
+                <form action="/ulogin" method="post">
+                    <div class="auther-blog">
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="email" name="uemail" id="" placeholder="Email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Password</span>
+                            <input type="password" name="upassword" id="" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <div class="abutton">
+                        <input type="submit" value="LOGIN">
+                    </div><br>
+                    <div class="abutton">
+                        <input type="reset" value="RESET">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="register">
+        <div class="fcontainer">
+            <div class="box">
+                <div class="title">User Registration</div>
+                <form action="/uinsertdata" method="post">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">First name</span>
+                            <input type="text" name="userfname" id="" placeholder="first name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Last name</span>
+                            <input type="text" name="userlname" id="" placeholder="last name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="email" name="useremail" id="" placeholder="email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Password</span>
+                            <input type="password" name="userpassword" id="" placeholder="password" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Mobile</span>
+                            <input type="number" name="usermobile" id="" placeholder="mobile" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">City</span>
+                            <input type="text" name="usercity" id="" placeholder="city" required>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="REGISTER">
+                    </div><br>
+                    <div class="button">
+                        <input type="reset" value="RESET">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

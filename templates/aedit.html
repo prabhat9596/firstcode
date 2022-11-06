@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{url_for("static",filename="style.css" )}}>
+    <link rel="stylesheet" href={{url_for("static",filename="content.css" )}}>
+    <link rel="stylesheet" href={{url_for("static",filename="form.css" )}}>
+    <link rel="stylesheet" href={{url_for("static",filename="blog.css" )}}>
+    <link rel="stylesheet" href={{url_for("static",filename="login.css" )}}>
+    <title>Home</title>
+</head>
+
+<body>
+    <section id="login">
+        <header>
+
+            <section id="register">
+                <div class="fcontainer">
+                    <div class="box">
+                        <div class="title">UPDATE</div>
+                        <form action="/aupdatedata" method="post">
+                            <div class="user-details">
+                                <div class="input-box">
+                                    <span class="details">First name</span>
+                                    <input type="text" name="authorfname" id="" value="{{t[0]}}" placeholder="first name" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Last name</span>
+                                    <input type="text" name="authorlname" id="" value="{{t[1]}}" placeholder="last name" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Email</span>
+                                    <input type="email" name="authoremail" id="" value="{{t[2]}}" placeholder="email" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Password</span>
+                                    <input type="password" name="authorpassword" value="{{t[3]}}" id="" placeholder="password" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Mobile</span>
+                                    <input type="number" name="authormobile" id="" value="{{t[4]}}" placeholder="mobile" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">City</span>
+                                    <input type="text" name="authorcity" id="" value="{{t[5]}}" placeholder="city" required>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <input type="submit" value="UPDATE">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+</body>
+
+</html>

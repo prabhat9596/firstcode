@@ -1,0 +1,18 @@
+mysql -h localhost -u root -p
+
+create database jarvis;
+
+use jarvis;
+
+create table userbook(fname varchar(20),lname varchar(20),email varchar(30),password varchar(10),mobile int,city varchar(20));
+
+create table authorbook(fname varchar(20),lname varchar(20),email varchar(30),password varchar(10),mobile int,city varchar(20));
+
+create table blogbook1(name varchar(20),title varchar(30),blog varchar(200));
+
+
+select * from userbook;
+
+select * from authorbook;
+
+select * from blogbook1;
